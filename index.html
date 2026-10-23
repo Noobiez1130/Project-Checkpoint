@@ -7,8 +7,20 @@
 </head>
 <body>
 
-  <h1>Add Portfolio Item</h1>
+  <h1>Personal Learning Portfolio</h1>
+
+  <!-- ส่วนสลับเลือกดู Portfolio Profile สำหรับ Save/Load แยกบุคคล -->
+  <div>
+    <label for="portfolio-select"><strong>เลือก Portfolio ที่ต้องการดู / บันทึก:</strong></label>
+    <select id="portfolio-select">
+      <option value="portfolio_1">Portfolio 1 (คนที่ 1)</option>
+      <option value="portfolio_2">Portfolio 2 (คนที่ 2)</option>
+    </select>
+  </div>
+
   <hr>
+
+  <h2>Add Portfolio Item</h2>
 
   <!-- ฟอร์มกรอกข้อมูล -->
   <form id="item-form">
@@ -90,8 +102,11 @@
   </form>
 
   <hr>
+
+  <!-- ส่วนแสดงรายการที่ถูกบันทึก -->
   <h2>Portfolio Items List</h2>
   <div id="items-container">
+    <!-- ข้อมูลจะโดนดึงมาตรงนี่นาจา -->
   </div>
 
   <script src="js/app.js"></script>
