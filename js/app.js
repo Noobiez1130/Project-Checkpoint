@@ -53,22 +53,37 @@ deletePortfolioBtn.addEventListener("click", () => {
 
 // เลือก Portfolio เข้า <select>
 function loadPortfolioOptions() {
-    const allPortfolios = JSON.parse(localStorage.getItem("portfoliosData")) || {};
+    let allPortfolios = JSON.parse(localStorage.getItem("portfoliosData")) || {};
 
-    // ตั้งค่าเริ่มต้น
+    // 1. ตั้งค่าเริ่มต้นถ้ายังไม่มีข้อมูลใน localStorage
     if (Object.keys(allPortfolios).length === 0) {
-        allPortfolios["Profile_1"] = { name: "Profile1", items: [] };
-        allPortfolios["Profile_2"] = { name: "Profile2", items: [] };
+        allPortfolios = {
+            "Profile_1": { name: "Profile 1", items: [] },
+            "Profile_2": { name: "Profile 2", items: [] }
+        };
         localStorage.setItem("portfoliosData", JSON.stringify(allPortfolios));
     }
 
+    // จำค่าที่เลือกไว้ปัจจุบัน
+    const currentSelected = portfolioSelect.value;
+
+    // ล้าง HTML เก่า
     portfolioSelect.innerHTML = "";
+
+    // สร้าง <option> ใหม่
     Object.keys(allPortfolios).forEach(id => {
         const option = document.createElement("option");
         option.value = id;
         option.textContent = allPortfolios[id].name || id;
         portfolioSelect.appendChild(option);
     });
+
+    // ป้องกัน value เป็นค่าว่าง
+    if (currentSelected && allPortfolios[currentSelected]) {
+        portfolioSelect.value = currentSelected;
+    } else {
+        portfolioSelect.selectedIndex = 0;
+    }
 }
 
 // สลับการแสดงผลเมื่อเปลี่ยนตัวเลือก Portfolio
@@ -79,6 +94,13 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     const selectedPortfolio = portfolioSelect.value;
+    
+    // เช็กป้องกันถ้าไม่ได้เลือก Profile
+    if (!selectedPortfolio) {
+        alert("กรุณาเลือก Profile ก่อนบันทึก");
+        return;
+    }
+
     const newItem = {
         id: document.querySelector("#item-id").value.trim() || "item_" + Date.now(),
         title: document.querySelector("#item-title").value.trim(),
@@ -97,8 +119,12 @@ form.addEventListener("submit", (event) => {
     };
 
     let allPortfolios = JSON.parse(localStorage.getItem("portfoliosData")) || {};
+    
     if (!allPortfolios[selectedPortfolio]) {
-        allPortfolios[selectedPortfolio] = { name: portfolioSelect.options[portfolioSelect.selectedIndex].text, items: [] };
+        allPortfolios[selectedPortfolio] = { 
+            name: portfolioSelect.options[portfolioSelect.selectedIndex]?.text || selectedPortfolio, 
+            items: [] 
+        };
     }
 
     allPortfolios[selectedPortfolio].items.push(newItem);
