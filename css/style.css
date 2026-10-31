@@ -1,0 +1,12 @@
+body { 
+   background: #f4f6fb; 
+}
+
+.hero {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: #fff;
+} 
+
+h1{
+    cursor: pointer;
+}
