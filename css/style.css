@@ -1,12 +1,15 @@
+html{
+    font-size: 16px;
+}
 body { 
-   background: #f4f6fb; 
+    background: #f4f6fb; 
 }
 
 .hero {
-            background: linear-gradient(135deg, #4f46e5, #7c3aed);
-            color: #fff;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: #fff;
 } 
 
 h1{
-    cursor: pointer;
+cursor: pointer;
 }
