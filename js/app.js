@@ -159,7 +159,7 @@ function renderItems() {
             <details>
             <summary><strong>Reflection</strong></summary>
             <ul>
-            <li><strong>Did:</strong> ${escapeHTML(item.reflection.whatIDid)}</li>
+            <li><strong>What I Did:</strong> ${escapeHTML(item.reflection.whatIDid)}</li>
             <li><strong>Learned:</strong> ${escapeHTML(item.reflection.whatILearned)}</li>
             <li><strong>Challenge:</strong> ${escapeHTML(item.reflection.challenge)}</li>
             <li><strong>Next:</strong> ${escapeHTML(item.reflection.nextStep)}</li>
