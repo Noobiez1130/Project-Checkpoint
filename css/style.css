@@ -13,3 +13,16 @@ body {
 h1{
 cursor: pointer;
 }
+.delete-item-btn {
+    border: 0;
+    background: #fdecec;
+    color: #dc3545;
+    border-radius: .5rem;
+    padding: .35rem .8rem;
+    font-weight: 500;
+}
+
+.delete-item-btn:hover {
+    background: #dc3545;
+    color: #fff;
+}
