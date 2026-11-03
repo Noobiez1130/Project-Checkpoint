@@ -38,7 +38,7 @@ deletePortfolioBtn.addEventListener("click", () => {
 
     // เช็ก Portfolio เพื่อป้องกันไม่ให้ลบหมด
     if (Object.keys(allPortfolios).length <= 1) {
-        alert("ไม่สามารถลบได้ ต้องมีอย่างน้อย 1 Portfolio ในระบบ");
+        alert("ไม่สามารถลบได้ ต้องมีอย่างน้อย 1 Profile ในระบบ");
     return;
     }
 
