@@ -2,28 +2,29 @@ html{
     font-size: 16px;
 }
 body { 
-    background: #f4f6fb; 
+    background: #faf8f4; 
 }
 
 .hero {
-    background: linear-gradient(135deg, #4f46e5, #7c3aed);
-    color: #fff;
+    background: linear-gradient(135deg, #5b7f6a, #a3b18a);
+    color: #faf8f4;
 } 
 
 
 .delete-item-btn {
     border: 0;
     background: #fdecec;
-    color: #dc3545;
+    color: #b3412f;
     border-radius: .5rem;
     padding: .35rem .8rem;
     font-weight: 500;
 }
 
 .delete-item-btn:hover {
-    background: #dc3545;
+    background: #b3412f;
     color: #fff;
 }
+
 .app-card {
     border: 0;
     border-radius: 1rem;
@@ -37,13 +38,13 @@ body {
 }
 
 .btn-brand {
-    background: #4f46e5;
+    background: #5b7f6a;
     color: #fff;
     border: 0;
 }
 
 .btn-brand:hover {
-    background: #7c3aed;
+    background: #a3b18a;
     color: #fff;
 }
 
@@ -65,4 +66,8 @@ body {
     text-align: center;
     padding: 1.5rem;
     color: #6c757d;
+}
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
