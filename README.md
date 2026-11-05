@@ -4,7 +4,9 @@
  - สร้าง Profile, 
  - เพิ่มผลงาน (Portfolio Item) พร้อมบันทึก Reflection และแนบลิงก์หลักฐาน
 
-Feature
+
+Feature;
+
 1.จัดการ Profile — เลือก, เพิ่ม และลบ Profile
 
 2.เพิ่ม Portfolio Item พร้อมข้อมูล: 
@@ -14,7 +16,9 @@ Feature
 
 3.แสดงรายการผลงานทั้งหมดใน Portfolio Items List
 
-วิธีเปิดและทดลองเว็บไซต์
+
+
+วิธีเปิดและทดลองเว็บไซต์;
 
 1.เปิดเบราว์เซอร์ (Chrome, Edge, Firefox หรือ Safari) บนคอมพิวเตอร์หรือมือถือ
 
@@ -37,7 +41,9 @@ Feature
 
 6.ทดลองลบด้วย Delete this Profile (เลือก Profile ที่ต้องการลบก่อน)
 
-วิธีใช้งาน
+
+
+วิธีใช้งาน;
 
 1.เลือก/สร้าง Profile — กด Add Profile เพื่อเพิ่มใหม่ หรือ Delete this Profile เพื่อลบอันที่เลือก
 
