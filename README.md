@@ -22,7 +22,7 @@
 
 1.เปิดเบราว์เซอร์ (Chrome, Edge, Firefox หรือ Safari) บนคอมพิวเตอร์หรือมือถือ
 
-2.เข้าลิงก์ https://satakamol-nusawat.github.io/Project-Checkpoint/
+2.เข้าลิงก์ https://noobiez1130.github.io/Project-Checkpoint/
 
 3.ทดลองใช้งานตามลำดับนี้:
  - กด Add Profile เพื่อสร้าง Profile ของตัวเอง แล้วเลือกจากช่อง Profile
